@@ -39,9 +39,9 @@ A File_Condition is an object that associates the name of the file to a semaphor
 DFR (Direction Forward Routing):
 --------------------------------
 The DFR class contains:
-  -A Repository which will save the File-locations (File Server FS IP:PORT)
-  -A Reservation list in order to manage reservation requests for not-found-file
-  -Two Passive_Socket in order to listen Client Requests and FS (File Server) Requests.
+  - A Repository which will save the File-locations (File Server FS IP:PORT)
+  - A Reservation list in order to manage reservation requests for not-found-file
+  - Two Passive_Socket in order to listen Client Requests and FS (File Server) Requests.
 
 Two threads will cyclically listen on these passive sockets.
 For each contact received from a client or from a FS the DFR creates a new thread and a new Active_Socket completely dedicated to the new contact.
